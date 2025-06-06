@@ -48,7 +48,7 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -219,6 +219,8 @@ nav {
 .hero .container {
     position: relative;
     z-index: 1;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .hero .container {
@@ -226,6 +228,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    margin-top: 200px;
+     margin-bottom: 100px;
 }
 
 .hero-content {
@@ -290,8 +294,8 @@ nav {
 }
 
 .image-placeholder {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     background-color: var(--light-gray);
     display: flex;
@@ -376,7 +380,6 @@ nav {
     flex: 1;
     display: flex;
     justify-content: center;
-    animation: slideInLeft 1s ease-out forwards;
 }
 
 .about-text {
