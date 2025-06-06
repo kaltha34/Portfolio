@@ -517,13 +517,15 @@ nav {
 
 .education::before {
     bottom: 50px;
-    left: 50px;
+    right: 50px;
 }
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    padding-top: 30px;
+    max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .timeline::before {
@@ -531,10 +533,21 @@ nav {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 15%;
     width: 2px;
-    background-color: var(--light-gray);
+    background: linear-gradient(to bottom, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.3));
+    transform: translateX(-50%);
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7%;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.3));
+    transform: translateX(-50%);
 }
 
 /* Timeline Header Styles */
@@ -689,7 +702,7 @@ nav {
 .timeline-dot {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 7%;
     transform: translateX(-50%);
     width: 24px;
     height: 24px;
@@ -715,7 +728,8 @@ nav {
 
 .timeline-content {
     position: relative;
-    width: calc(50% - 40px);
+    width: calc(85% - 40px);
+    margin: 0 auto;
     padding: 0;
     background-color: var(--glass-bg);
     border-radius: 16px;
@@ -750,12 +764,10 @@ nav {
     opacity: 0.05;
 }
 
-.timeline-item:nth-child(odd) .timeline-content {
+.timeline-item .timeline-content {
     left: 0;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    left: calc(50% + 40px);
+    right: 0;
+    margin: 0 auto;
 }
 
 .timeline-content h3 {
