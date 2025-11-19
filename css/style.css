@@ -287,6 +287,34 @@ nav {
     color: white;
 }
 
+/* LinkedIn Follow Button */
+.libutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #0A66C2;
+    font-family: "SF Pro Text", Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.libutton:hover {
+    background-color: #004182;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(10, 102, 194, 0.3);
+}
+
 .hero-image {
     flex: 1;
     display: flex;
